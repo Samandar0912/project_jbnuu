@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
+.crambs {
+  width: 80%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: none;
+  box-shadow: none;
+}
+.crambs-title, .crambs-body {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 12px;
+  width: 100%;
+}
+.crambs-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.crambs-title__text {
+  font-size: 25px;
+  color: #5d809b;
+  font-weight: bold;
+}
+.crambs-body {
+  padding: 5px 0 5px;
+}
+.crambs-body__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  margin-left: 52px;
+}
+.crambs-body__item_link {
+  color: #5d809b;
+  font-weight: bold;
+}
+.crambs-body__item_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #627e94;
+}
+
+.newst .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 30px 30px;
+}
+.newst-item {
+  background-size: contain;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+}
+.newst-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.newst-item .body {
+  height: 40%;
+  position: absolute;
+  bottom: 0%;
+  background-color: rgba(98, 126, 148, 0.71);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.newst-item .body .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.newst-item .body .text .date {
+  color: rgba(255, 255, 255, 0.71);
+  font-weight: normal;
+}
+.newst-item .body .text .discreption {
+  color: whitesmoke;
+}
+.newst-item .body .btn {
+  text-align: end;
+  position: relative;
+}
+.newst-item .body .btn button {
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.newst-item .body .btn button:hover {
+  background-color: rgba(255, 255, 255, 0.71);
+  color: #627e94;
+}
+.newst-item .body .btn button:active {
+  background: local;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
