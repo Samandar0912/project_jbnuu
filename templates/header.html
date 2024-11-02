@@ -1,46 +1,181 @@
-<div>
-    <div class="symbols">
-        <a href="#">
-            <img style="width: 2rem;" src="../assets/images/Flag_of_Uzbekistan.svg" alt="">
-        </a>
-        <a href="#">
-            <img src="../assets/images/Emblem_of_Uzbekistan.svg" alt="">
-        </a>
-        <a href="#">
-            <img src="../assets/images/nota.svg" alt="">
-        </a>
+{% load static %}
+<div id="header">
+    <div>
+        <div class="symbols">
+            <a href="#">
+                <img style="width: 2rem;" src="{% static 'images/flag.png' %}" alt="flag">
+            </a>
+            <a href="#">
+                <img src="{% static 'images/gerb.png' %}" alt="gerb">
+            </a>
+            <a href="#">
+                <img src="{% static 'images/nota.svg' %}" alt="nota">
+            </a>
+        </div>
+        
+        <div class="links">
+            <a href="#">
+                <img style="width: 1.2rem;" src="{% static 'images/Calendar.svg' %}" alt="">
+                <h6>17.08.2024, shanba 17:00</h6>
+            </a>
+            <a href="#">
+                <img src="{% static 'images/table.svg' %}" alt="">
+                <h6>Talabalar dars jadvali</h6>
+            </a>
+            <a href="#">
+                <img src="{% static 'images/e-book.svg' %}" alt="">
+                <h6>Elektron kutubxona</h6>
+            </a>
+        </div>
+        
+        <div class="search">
+            <i class="search__icon fa fa-search"></i>
+            <input type="search" class="search__input" 
+            placeholder="Qidiruv">
+        </div>
+        
+        <div class="language">
+            <div class="box">
+                <img src="assets/images/language.svg" alt="">
+                <div class="lang">
+                    <h6>Uz</h6>
+                    <p>|</p>
+                    <h6>Ru</h6>
+                    <p>|</p>
+                    <h6>En</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="navbar">
+    <a href="../index.html" class="logoItem">
+        <img class="logo" src="{% static 'images/logo.png' %}" alt="">
+        <p class="logoText">
+            MIRZO ULUG‘BEK NOMIDAGI <br>
+            O‘ZBEKISTON MILLIY UNIVERSITETI <br>
+            JIZZAX FILIALI <br>
+        </p>
+    </a>
+    
+    <div class="connect">
+        <div class="item">
+            <img src="{% static 'images/call_center 1.svg' %}" alt="">
+            <div class="number">
+                <p>72-226-01-71</p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <img src="{% static 'images/phone.svg' %}" alt="">
+            <div class="number">
+                <p>72-226-01-71</p>
+                <p>72-226-01-71</p>
+            </div>
+        </div>
     </div>
     
-    <div class="links">
-        <a href="#">
-            <img style="width: 1.2rem;" src="../assets/images/Calendar.svg" alt="">
-            <h6>17.08.2024, shanba 17:00</h6>
-        </a>
-        <a href="#">
-            <img src="../assets/images/table.svg" alt="">
-            <h6>Talabalar dars jadvali</h6>
-        </a>
-        <a href="#">
-            <img src="../assets/images/e-book.svg" alt="">
-            <h6>Elektron kutubxona</h6>
-        </a>
-    </div>
-    
-    <div class="search">
-        <i class="search__icon fa fa-search"></i>
-        <input type="search" class="search__input" 
-        placeholder="Qidiruv">
-    </div>
-    
-    <div class="language">
-        <div class="box">
-            <img src="../assets/images/language.svg" alt="">
-            <div class="lang">
-                <h6>Uz</h6>
-                <p>|</p>
-                <h6>Ru</h6>
-                <p>|</p>
-                <h6>En</h6>
+    <div class="navBtns">
+        <div class="navBtn btn1">
+            <div class="text">
+                <p>Yangiliklar</p>
+                <img src="{% static 'images/dropdowArrow.svg' %}" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="menuItem">Yangiliklar</a></li>
+                <li><a href="#" class="menuItem">E'lonlar</a></li>
+            </ul>          
+        </div>
+        <div class="navBtn btn2">
+            <div class="text">
+                <p>Filial</p>
+                <img src="{% static 'images/dropdowArrow.svg' %}" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="menuItem">Universitet haqida</a></li>
+                <li><a href="#" class="menuItem">Filial tarixi</a></li>
+                <li><a href="#" class="menuItem">Filial tuzilmasi</a></li>
+                <li><a href="#" class="menuItem">Filial kengashi</a></li>
+                <li><a href="#" class="menuItem">Rahbariyat</a></li>
+                <li><a href="#" class="menuItem">Markazlar</a></li>
+                <li><a href="#" class="menuItem">Bo'limlar</a></li>
+                <li><a href="#" class="menuItem">Karyera markazi</a></li>
+                <li><a href="#" class="menuItem">Sektorlar</a></li>
+                <li><a href="#" class="menuItem">Fakultetlar</a></li>
+                <li><a href="#" class="menuItem">Kafedralar</a></li>
+                <li><a href="#" class="menuItem">Bo‘sh ish o‘rinlari</a></li>
+                <li><a href="#" class="menuItem">Bino inshoatlar joylashuvi</a></li>
+                <li><a href="#" class="menuItem">Rekvizitlar</a></li>
+                <li><a href="#" class="menuItem">Asosiy me'yoriy hujjatlar</a></li>
+                <li><a href="#" class="menuItem">Manfaatlar to'qnashuvi to'g'risida</a></li>
+            </ul>            
+        </div>
+        <div class="navBtn btn3">
+            <div class="text">
+                <p>Qabul-2024</p>
+                <img src="{% static 'images/dropdowArrow.svg' %}" alt="">
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#" class="menuItem">Imtihon natijalari 2024-2025</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Filial tarixi</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Filial tuzilmasi</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Filial kengashi</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Rahbariyat</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Markazlar</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Bo'limlar</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Karyera markazi</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Sektorlar</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Fakultetlar</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Kafedralar</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Bo‘sh ish o‘rinlari</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Bino inshoatlar joylashuvi</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Rekvizitlar</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Asosiy me'yoriy hujjatlar</a>
+                </li>
+                <li>
+                    <a href="#" class="menuItem">Manfaatlar to'qnashuvi to'g'risida</a>
+                </li>
+            </ul> 
+        </div>
+        <div class="navBtn btn4">
+            <div class="text">
+                <p>Doktorantura</p>
+                <img src="{% static 'images/dropdowArrow.svg' %}" alt="">
+            </div>  
+        </div>
+        <div class="navBtn btn5">
+            <div class="text">
+                <p>Interaktiv xizmatlar</p>
+                <img src="{% static 'images/dropdowArrow.svg' %}" alt="">
             </div>
         </div>
     </div>

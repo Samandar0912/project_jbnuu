@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+$font-stack: 'Aleo', sans-serif;
+$text-font: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+$primary-color: #627e94;
+$header-text-hover-color: #4DD0E1;
+$text-color: #5d809b;
+$text-color1: #204B6C;
+
+.crambs {
+    width: 80%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: none;
+    box-shadow: none;
+
+    &-title,
+    &-body {
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    &-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &__text {
+            font-size: 25px;
+            color: $text-color;
+            font-weight: bold;
+        }
+    }
+
+    &-body {
+        padding: 5px 0 5px;
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            gap: 1rem;
+            margin-left: 52px;
+
+            &_link {
+                color: $text-color;
+                font-weight: bold;
+            }
+
+            &_dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50px;
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+.newsviewt {
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.4fr 0.6fr;
+        grid-template-rows: 1fr;
+        gap: 30px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "view items";
+    }
+
+    .view {
+        grid-area: view;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        img{
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+        .date{
+            color: $text-color;
+            font-size: 12px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .text-title{
+                font-size: 20px;
+                text-align: center;
+                color: $text-color;
+                font-weight: bold;
+            }
+            .text-body{
+                color: $text-color;
+                line-height: 1.5rem;
+            }
+
+            .images{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 30px 30px;
+                grid-auto-flow: row;
+                img{
+                    height: 300px;
+                    border: 1px solid $primary-color;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    .items {
+        grid-area: items;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &-item {
+        background-size: contain;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        height: 350px;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .body {
+            height: 40%;
+            position: absolute;
+            bottom: 0%;
+            background-color: rgba($color: $primary-color, $alpha: 71%);
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                .date {
+                    color: rgba($color: #ffffff, $alpha: 71%);
+                    font-weight: normal;
+                }
+
+                .discreption {
+                    color: whitesmoke;
+                }
+            }
+
+            .btn {
+                text-align: end;
+                position: relative;
+
+                a {
+                    position: absolute;
+                    right: 0rem;
+                    bottom: 0rem;
+                    padding: 0.5rem 1rem;
+                    background: none;
+                    border: 1px solid white;
+                    color: white;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+
+                a:hover {
+                    background-color: rgba($color: #ffffff, $alpha: 71%);
+                    color: $primary-color;
+                }
+
+                a:active {
+                    background: local;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+}

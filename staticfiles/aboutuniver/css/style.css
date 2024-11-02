@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
+body .crambs {
+  width: 80%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: none;
+  box-shadow: none;
+}
+body .crambs-title, body .crambs-body {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 12px;
+  width: 100%;
+}
+body .crambs-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .crambs-title__text {
+  font-size: 25px;
+  color: #5d809b;
+  font-weight: bold;
+}
+body .crambs-body {
+  padding: 5px 0 5px;
+}
+body .crambs-body__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  margin-left: 52px;
+}
+body .crambs-body__item_link {
+  color: #5d809b;
+  font-weight: bold;
+}
+body .crambs-body__item_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #627e94;
+}
+body .aboutuniver {
+  background: none;
+  box-shadow: none;
+  width: 80%;
+  padding: 0%;
+}
+body .aboutuniver .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr;
+  grid-template-rows: 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "item1 item2";
+}
+body .aboutuniver .item1, body .aboutuniver .item2 {
+  border-radius: 12px;
+  padding: 5px;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  border: 0.2px solid #627e94;
+}
+body .aboutuniver .item1 {
+  grid-area: item1;
+}
+body .aboutuniver .item1 .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
+body .aboutuniver .item1 .container .branch-item {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #627e94;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.3s all linear;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+}
+body .aboutuniver .item1 .container .branch-item p {
+  color: #5d809b;
+  font-weight: bold;
+}
+body .aboutuniver .item1 .container .branch-item:hover {
+  background-color: #627e94;
+}
+body .aboutuniver .item1 .container .branch-item:hover svg path {
+  fill: white;
+  stroke: white;
+}
+body .aboutuniver .item1 .container .branch-item:hover p {
+  color: white;
+}
+@media screen and (min-width: 340px) and (max-width: 767px) {
+  body .aboutuniver .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas: "item2";
+  }
+  body .aboutuniver .item1 {
+    display: none;
+  }
+}
+body .aboutuniver .item2 {
+  grid-area: item2;
+  padding: 30px 52px;
+}
+body .aboutuniver .item2 .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body .aboutuniver .item2 .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 340px) and (max-width: 767px) {
+  body .aboutuniver .item2 .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    flex-wrap: wrap;
+  }
+}
+body .aboutuniver-item {
+  border-radius: 8px;
+  border: 1px solid #627e94;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.3s all linear;
+}
+body .aboutuniver-item .header {
+  position: relative;
+}
+body .aboutuniver-item .header img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .aboutuniver-item .header .date {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 0.5rem;
+  background-color: #627e94;
+  border-radius: 0px 8px 0px 0px;
+  border-top: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  color: white;
+}
+body .aboutuniver-item .body {
+  padding: 0.5rem;
+}
+body .aboutuniver-item:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
+.crambs {
+  width: 80%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: none;
+  box-shadow: none;
+}
+.crambs-title, .crambs-body {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 12px;
+  width: 100%;
+}
+.crambs-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.crambs-title__text {
+  font-size: 25px;
+  color: #5d809b;
+  font-weight: bold;
+}
+.crambs-body {
+  padding: 5px 0 5px;
+}
+.crambs-body__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  margin-left: 52px;
+}
+.crambs-body__item_link {
+  color: #5d809b;
+  font-weight: bold;
+}
+.crambs-body__item_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #627e94;
+}
+
+.newsviewt .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-rows: 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas: "view items";
+}
+.newsviewt .view {
+  grid-area: view;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.newsviewt .view img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.newsviewt .view .date {
+  color: #5d809b;
+  font-size: 12px;
+}
+.newsviewt .view .text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.newsviewt .view .text .text-title {
+  font-size: 20px;
+  text-align: center;
+  color: #5d809b;
+  font-weight: bold;
+}
+.newsviewt .view .text .text-body {
+  color: #5d809b;
+  line-height: 1.5rem;
+}
+.newsviewt .view .text .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+}
+.newsviewt .view .text .images img {
+  height: 300px;
+  border: 1px solid #627e94;
+  border-radius: 8px;
+}
+.newsviewt .items {
+  grid-area: items;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.newsviewt-item {
+  background-size: contain;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+}
+.newsviewt-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.newsviewt-item .body {
+  height: 40%;
+  position: absolute;
+  bottom: 0%;
+  background-color: rgba(98, 126, 148, 0.71);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.newsviewt-item .body .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.newsviewt-item .body .text .date {
+  color: rgba(255, 255, 255, 0.71);
+  font-weight: normal;
+}
+.newsviewt-item .body .text .discreption {
+  color: whitesmoke;
+}
+.newsviewt-item .body .btn {
+  text-align: end;
+  position: relative;
+}
+.newsviewt-item .body .btn a {
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.newsviewt-item .body .btn a:hover {
+  background-color: rgba(255, 255, 255, 0.71);
+  color: #627e94;
+}
+.newsviewt-item .body .btn a:active {
+  background: local;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

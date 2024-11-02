@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jbnuu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'news/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/swiper-bundle.min.css' %}" />
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load('/templates/header.html');
+            $("#navbar").load('/templates/navbar.html');
+            $("#footer").load('/templates/footer.html');
+        });
+    </script> -->
+</head>
+<body class="parallax">
+
+    {% include "header.html" %}
+    
+    {% include "__main_title.html" %}
+    
+    {% block main %}{% endblock main %}
+    {% block news %}{% endblock news %}
+    {% block announ %}{% endblock announ %}
+    {% block counterV %}{% endblock counterV %}
+    {% block fast-links %}{% endblock fast-links %}
+    {% block systems %}{% endblock systems %}
+    {% block sites %}{% endblock sites %}
+    
+
+    
+
+
+
+    {% include "footer.html" %}
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="{% static 'main/js/swiper.js' %}"></script>
+    <script src="{% static 'main/js/script.js' %}"></script>
+</body>
+
+</html>

@@ -97,7 +97,7 @@
   text-align: end;
   position: relative;
 }
-.newst-item .body .btn button {
+.newst-item .body .btn a {
   position: absolute;
   right: 0rem;
   bottom: 0rem;
@@ -108,11 +108,11 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.newst-item .body .btn button:hover {
+.newst-item .body .btn a:hover {
   background-color: rgba(255, 255, 255, 0.71);
   color: #627e94;
 }
-.newst-item .body .btn button:active {
+.newst-item .body .btn a:active {
   background: local;
   color: white;
 }/*# sourceMappingURL=style.css.map */

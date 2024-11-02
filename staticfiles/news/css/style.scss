@@ -104,7 +104,8 @@ $text-color1: #204B6C;
             .btn {
                 text-align: end;
                 position: relative;
-                button {
+
+                a {
                     position: absolute;
                     right: 0rem;
                     bottom: 0rem;
@@ -116,12 +117,12 @@ $text-color1: #204B6C;
                     cursor: pointer;
                 }
 
-                button:hover {
+                a:hover {
                     background-color: rgba($color: #ffffff, $alpha: 71%);
                     color: $primary-color;
                 }
 
-                button:active {
+                a:active {
                     background: local;
                     color: white;
                 }

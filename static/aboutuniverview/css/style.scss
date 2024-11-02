@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+$font-stack: 'Aleo', sans-serif;
+$text-font: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+$primary-color: #627e94;
+$header-text-hover-color: #4DD0E1;
+$text-color: #5d809b;
+$text-color1: #204B6C;
+
+body{
+    .crambs {
+        width: 80%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: none;
+        box-shadow: none;
+    
+        &-title,
+        &-body {
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            border-radius: 12px;
+            width: 100%;
+        }
+    
+        &-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+    
+            &__text {
+                font-size: 25px;
+                color: $text-color;
+                font-weight: bold;
+            }
+        }
+    
+        &-body {
+            padding: 5px 0 5px;
+    
+            &__item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                gap: 1rem;
+                margin-left: 52px;
+    
+                &_link {
+                    color: $text-color;
+                    font-weight: bold;
+                }
+    
+                &_dot {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50px;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+    
+    .aboutuniverView {
+        background: none;
+        box-shadow: none;
+        width: 80%;
+        padding: 0%;
+    
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr;
+            gap: 30px 30px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "item2";
+        }
+    
+        .item1,.item2{
+            border-radius: 12px;
+            padding: 5px;
+            background-color: whitesmoke;
+            padding: 0.5rem;
+            border: 0.2px solid $primary-color;
+        }
+    
+        .item2 {
+            grid-area: item2;
+            padding: 30px 52px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            .date{
+                position: absolute;
+                background-color: $primary-color;
+                color: whitesmoke;
+                top: 0px;
+                left: 0px;
+                border-radius: 12px 0px 12px 0px;
+                padding: 0.5rem 1rem;
+            }
+            img{
+                width: 40%;
+                // height: 350px;
+                display: block;
+                object-fit: contain;
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &-title{
+                    text-align: center;
+                    font-size: 25px;
+                    color: $text-color;
+                }
+                &-body{
+                    text-align: justify;
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}
