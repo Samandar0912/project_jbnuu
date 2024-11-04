@@ -1,0 +1,56 @@
+{% extends "__base.html" %}
+{% load static %}
+{% block main %}
+
+    <section id="crambs" class="crambs">
+        <div class="crambs-title">
+            <svg width="390" height="69" viewBox="0 0 390 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.99986 0.468018H389.411L356.411 18.468H-26L6.99986 0.468018Z" fill="#537188" />
+                <path d="M-85.0001 25.468H297.411L264.411 43.468H-118L-85.0001 25.468Z" fill="#537188" />
+                <path d="M-172 50.468H210.411L177.411 68.468H-205L-172 50.468Z" fill="#537188" />
+            </svg>
+            <p class="crambs-title__text">Yangiliklar</p>
+            <svg width="386" height="69" viewBox="0 0 386 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M212 0.468018H594.411L561.411 18.468H179L212 0.468018Z" fill="#537188" />
+                <path d="M120 25.468H502.411L469.411 43.468H87L120 25.468Z" fill="#537188" />
+                <path d="M32.9999 50.468H415.411L382.411 68.468H0L32.9999 50.468Z" fill="#537188" />
+            </svg>
+        </div>
+        <div class="crambs-body">
+            <div class="crambs-body__item">
+                <a class="crambs-body__item_link" href="{% url "main:index" %}">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2361_1208)">
+                            <path d="M5 12.6498H3L12 3.64984L21 12.6498H19" stroke="#537188" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 12.6498V19.6498C5 20.1803 5.21071 20.689 5.58579 21.0641C5.96086 21.4391 6.46957 21.6498 7 21.6498H17C17.5304 21.6498 18.0391 21.4391 18.4142 21.0641C18.7893 20.689 19 20.1803 19 19.6498V12.6498" stroke="#537188" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 21.6498V15.6498C9 15.1194 9.21071 14.6107 9.58579 14.2356C9.96086 13.8606 10.4696 13.6498 11 13.6498H13C13.5304 13.6498 14.0391 13.8606 14.4142 14.2356C14.7893 14.6107 15 15.1194 15 15.6498V21.6498" stroke="#537188" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs><clipPath id="clip0_2361_1208"><rect width="24" height="24" fill="white" transform="translate(0 0.649841)" /></clipPath></defs>
+                    </svg>
+                </a>
+                <div class="crambs-body__item_dot"></div>
+                <a class="crambs-body__item_link" href="{% url "main:news" %}">Yangiliklar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newst" class="newst">
+        <div class="container">
+            {% for news in postNews %}
+                <div class="newst-item">
+                    <img src="{{ news.photo.url }}" alt="">
+                    <div class="body">
+                        <div class="text">
+                            <h6 class="date">{{ news.created }}</h6>
+                            <h4 class="discreption">{{ news.title }}</h4>
+                        </div>
+                        <div class="btn">
+                            <a href="#">Batafsil</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+{% endblock main %}

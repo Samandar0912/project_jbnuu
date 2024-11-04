@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'news/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'announs/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'main/css/swiper-bundle.min.css' %}" />
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -23,10 +24,8 @@
 </head>
 <body class="parallax">
 
-    {% include "header.html" %}
-    
-    {% include "__main_title.html" %}
-    
+    {% include "__navbar.html" %}
+        
     {% block main %}{% endblock main %}
     {% block news %}{% endblock news %}
     {% block announ %}{% endblock announ %}
@@ -35,12 +34,7 @@
     {% block systems %}{% endblock systems %}
     {% block sites %}{% endblock sites %}
     
-
-    
-
-
-
-    {% include "footer.html" %}
+    {% include "__footer.html" %}
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
