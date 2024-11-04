@@ -1,15 +1,22 @@
 from django.shortcuts import render
-from .models import post_site_elon, post_site_news, Statistika
+from .models import Category_facultet, post_site_news, post_site_elon, Statistika, MySites, FastLinks, UsefulSites
 
 # Create your views here.
 
 def index(request):
     Announs = post_site_elon.objects.all()
     News = post_site_news.objects.all()
+    mySites = MySites.objects.all()
+    fastLinks = FastLinks.objects.all()
+    usefulSites = UsefulSites.objects.all()
+    statistika = Statistika.objects.all()
     context = {
         'postNews':News,
         'postAnnouns':Announs,
-        'statistika':Statistika,
+        'statistika':statistika,
+        'mySites':mySites,
+        'fastLinks':fastLinks,
+        'usefulSites':usefulSites,
     }
     return render(request, '__index.html', context)
 
