@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Category_facultet, post_site_news, post_site_elon, Statistika, MySites, FastLinks, UsefulSites
 
 # Create your views here.
@@ -29,9 +29,31 @@ def postNews(request):
     return render(request, 'news/news.html', context)
 
 
+def newsDetail(request, pk):
+    News = get_object_or_404(post_site_news, pk=pk)
+    other_news = post_site_news.objects.exclude(pk=pk)[:5]
+    context = {
+        'postNews': News,
+        'other_news':other_news
+    }
+    return render(request, 'news/newsDetail.html', context)
+
+
+
 def postAnnouns(request):
     Announs = post_site_elon.objects.all()
     context = {
         'postAnnouns':Announs
     }
     return render(request, 'news/announs.html', context)
+
+
+def elonDetail(request, pk):
+    elon = get_object_or_404(post_site_elon, pk=pk)
+    other = post_site_elon.objects.exclude(pk=pk)[:5]
+    context = {
+        'postElon': elon,
+        'elonlar':other
+    }
+    return render(request, 'news/elonDetail.html', context)
+

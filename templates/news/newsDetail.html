@@ -34,23 +34,39 @@
         </div>
     </section>
 
-    <section id="newst" class="newst">
+    <section id="newsviewt" class="newsviewt">
         <div class="container">
-            {% for news in postNews %}
-                <div class="newst-item">
-                    <img src="{{ news.photo.url }}" alt="">
-                    <div class="body">
-                        <div class="text">
-                            <h6 class="date">{{ news.created|date:"d.m.Y" }}</h6>
-                            <h4 class="discreption">{{ news.title }}</h4>
-                        </div>
-                        <div class="btn">
-                            <a href="{% url 'main:newsDetail' pk=news.pk %}">Batafsil</a>
-                        </div>
+            <div class="view">
+                <img src="{{ postNews.photo.url }}" alt="">
+                <h6 class="date">{{ postNews.created|date:"d.m.Y" }}</h6>
+                <div class="text">
+                    <div class="text-title">{{ postNews.title }}</div>
+                    <div class="text-body">{{ postNews.body }}</div>
+                    <div class="images">
+                        <img src="{% static 'images/news/1.png' %}" alt="">
+                        
                     </div>
                 </div>
-            {% endfor %}
-        </div>
+            </div>
+            <div class="items">
+                {% for item in other_news %}
+                    {% if forloop.counter <= 4  %}
+                        <div class="newsviewt-item">
+                            <img src="{{ item.photo.url }}" alt="">
+                            <div class="body">
+                                <div class="text">
+                                    <h6 class="date">{{ item.created|date:"d.m.Y" }}</h6>
+                                    <h4 class="discreption">{{ item.title }}</h4>
+                                </div>
+                                <div class="btn">
+                                    <a href="{% url 'main:newsDetail' pk=item.pk %}">Batafsil</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                {% endfor %}
+            </div>
+          </div>
     </section>
 
 {% endblock main %}

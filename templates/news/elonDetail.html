@@ -1,5 +1,6 @@
 {% extends "__base.html" %}
 {% load static %}
+
 {% block main %}
 
     <section id="crambs" class="crambs">
@@ -43,24 +44,36 @@
         </div>
     </section>
 
-    <section id="announst" class="announst">
+    <section id="announview" class="announview">
         <div class="container">
-
-            {% for announs in postAnnouns %}
-                <div class="announst-item">
-                    <img src="{{ announs.photo.url }}" alt="">
-                    <div class="body">
-                        <div class="text">
-                            <h6 class="date">{{ announs.created }}</h6>
-                            <h4 class="discreption">{{ announs.title|truncatewords:8 }}</h4>
-                        </div>
-                        <div class="btn">
-                            <a class="announst-btn" href="{% url 'main:elonDetail' pk=announs.pk %}">Batafsil</a>
-                        </div>
-                    </div>
+            <div class="view">
+                <img src="{{ postElon.photo.url }}" alt="">
+                <div class="date">{{ postElon.created|date:'d.m.Y' }}</div>
+                <div class="text">
+                    <div class="text-title">{{ postElon.title }}</div>
+                    <div class="text-body">{{ postElon.body }}</div>
                 </div>
-            {% endfor %}
-        
-        </div>
+            </div>
+            <div class="items">
+                
+                {% for item in elonlar %}
+                    {% if forloop.counter <= 4  %}
+                        <div class="announview-item">
+                            <img src="{{ item.photo.url }}" alt="">
+                            <div class="body">
+                                <div class="text">
+                                    <h6 class="date">{{ item.created|date:'d.m.Y' }}</h6>
+                                    <h4 class="discreption">{{ item.title }}</h4>
+                                </div>
+                                <div class="btn">
+                                    <a class="announst-btn" href="{% url 'main:elonDetail' pk=item.pk %}">Batafsil</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+          </div>
     </section>
 {% endblock main %}

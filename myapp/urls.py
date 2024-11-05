@@ -1,10 +1,14 @@
 from django.urls import path
-from . import views
+from .views import *
 
 app_name = 'main'
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('Yangiliklar', views.postNews, name='news'),
-    path("E'lonlar", views.postAnnouns, name='announs'),
+    path('', index, name='index'),
+    path('Yangiliklar', postNews, name='news'),
+    path("E'lonlar", postAnnouns, name='announs'),
+    
+    path('Yangiliklar/<int:pk>', newsDetail, name='newsDetail'),
+    path("E'lonlar/<int:pk>", elonDetail, name='elonDetail'),
+
     
 ]
