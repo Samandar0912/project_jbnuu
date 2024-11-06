@@ -1,60 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
-body .crambs {
-  width: 80%;
-  padding: 0%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background: none;
-  box-shadow: none;
-}
-body .crambs-title, body .crambs-body {
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  border-radius: 12px;
-  width: 100%;
-}
-body .crambs-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-body .crambs-title__text {
-  font-size: 25px;
-  color: #5d809b;
-  font-weight: bold;
-}
-body .crambs-body {
-  padding: 5px 0 5px;
-}
-body .crambs-body__item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  gap: 1rem;
-  margin-left: 52px;
-}
-body .crambs-body__item_link {
-  color: #5d809b;
-  font-weight: bold;
-}
-body .crambs-body__item_dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  background-color: #627e94;
-}
-body .aboutuniver {
+body .historyuniver {
   background: none;
   box-shadow: none;
   width: 80%;
   padding: 0%;
 }
-body .aboutuniver .container {
+body .historyuniver .container {
   width: 100%;
   display: grid;
   grid-template-columns: 0.4fr 1.6fr;
@@ -63,17 +14,17 @@ body .aboutuniver .container {
   grid-auto-flow: row;
   grid-template-areas: "item1 item2";
 }
-body .aboutuniver .item1, body .aboutuniver .item2 {
+body .historyuniver .item1, body .historyuniver .item2 {
   border-radius: 12px;
   padding: 5px;
   background-color: whitesmoke;
   padding: 0.5rem;
   border: 0.2px solid #627e94;
 }
-body .aboutuniver .item1 {
+body .historyuniver .item1 {
   grid-area: item1;
 }
-body .aboutuniver .item1 .container {
+body .historyuniver .item1 .container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,7 +32,7 @@ body .aboutuniver .item1 .container {
   flex-wrap: wrap;
   gap: 10px 30px;
 }
-body .aboutuniver .item1 .container .branch-item {
+body .historyuniver .item1 .container .branch-item {
   width: 100%;
   padding: 1rem 2rem;
   border-radius: 8px;
@@ -93,22 +44,22 @@ body .aboutuniver .item1 .container .branch-item {
   transition: 0.3s all linear;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
 }
-body .aboutuniver .item1 .container .branch-item p {
+body .historyuniver .item1 .container .branch-item p {
   color: #5d809b;
   font-weight: bold;
 }
-body .aboutuniver .item1 .container .branch-item:hover {
+body .historyuniver .item1 .container .branch-item:hover {
   background-color: #627e94;
 }
-body .aboutuniver .item1 .container .branch-item:hover svg path {
+body .historyuniver .item1 .container .branch-item:hover svg path {
   fill: white;
   stroke: white;
 }
-body .aboutuniver .item1 .container .branch-item:hover p {
+body .historyuniver .item1 .container .branch-item:hover p {
   color: white;
 }
 @media screen and (min-width: 340px) and (max-width: 767px) {
-  body .aboutuniver .container {
+  body .historyuniver .container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -117,29 +68,31 @@ body .aboutuniver .item1 .container .branch-item:hover p {
     grid-auto-flow: row;
     grid-template-areas: "item2";
   }
-  body .aboutuniver .item1 {
+  body .historyuniver .item1 {
     display: none;
   }
 }
-body .aboutuniver .item2 {
+body .historyuniver .item2 {
   grid-area: item2;
   padding: 30px 52px;
   position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  gap: 1rem;
 }
-body .aboutuniver .item2 .title {
-  position: absolute;
+body .historyuniver .item2 .title {
   top: 0px;
   left: 0px;
   padding: 1rem 1.5rem;
   background-color: #627e94;
   border-radius: 12px 8px 12px 8px;
   color: whitesmoke;
+  text-align: center;
 }
-body .aboutuniver .item2 .body {
+body .historyuniver .item2 .body {
   text-align: justify;
-  padding: 2rem 0rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  color: #5d809b;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

@@ -452,6 +452,14 @@ body {
                 }
             }
 
+            .btn5{
+                .text{
+                    p{
+                        line-height: 1.2rem;
+                    }
+                }
+            }
+
             .navBtn:hover>ul {
                 visibility: visible;
                 transition: 0s;
@@ -527,6 +535,72 @@ body {
                 align-items: center;
             }
 
+        }
+    }
+
+    .crambs {
+        width: 80%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: none;
+        box-shadow: none;
+    
+        &-title,
+        &-body {
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            border-radius: 12px;
+            width: 100%;
+        }
+    
+        &-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+    
+            &__text {
+                font-size: 25px;
+                color: $text-color;
+                font-weight: bold;
+            }
+        }
+    
+        &-body {
+            padding: 5px 0 5px;
+            &__item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                gap: 1rem;
+                margin-left: 52px;
+    
+                &_link {
+                    display: flex;
+                    flex-direction: row;
+                    color: $text-color;
+                    font-weight: bold;
+
+                    svg{
+                        path{
+                            fill: $text-color;
+                        }
+                    }
+                }
+    
+                &_dot {
+                    width:2px;
+                    height: 15px;
+                    border-radius: 20px;
+                    transform: rotate(30deg);
+                    background-color: $primary-color;
+                }
+            }
         }
     }
 
@@ -1262,6 +1336,8 @@ body {
             .link {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
+                justify-content: center;
                 gap: 0.5rem;
 
                 h3 {
@@ -1395,6 +1471,8 @@ body {
             .link {
                 display: flex;
                 flex-direction: row;
+                align-items: center;
+                justify-content: center;
                 gap: 0.5rem;
 
                 h3 {

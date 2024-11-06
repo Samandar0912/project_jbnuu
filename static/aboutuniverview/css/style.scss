@@ -6,65 +6,7 @@ $header-text-hover-color: #4DD0E1;
 $text-color: #5d809b;
 $text-color1: #204B6C;
 
-body{
-    .crambs {
-        width: 80%;
-        padding: 0%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        background: none;
-        box-shadow: none;
-    
-        &-title,
-        &-body {
-            overflow: hidden;
-            background-color: rgb(255, 255, 255);
-            border-radius: 12px;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-            border-radius: 12px;
-            width: 100%;
-        }
-    
-        &-title {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-    
-            &__text {
-                font-size: 25px;
-                color: $text-color;
-                font-weight: bold;
-            }
-        }
-    
-        &-body {
-            padding: 5px 0 5px;
-    
-            &__item {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: start;
-                gap: 1rem;
-                margin-left: 52px;
-    
-                &_link {
-                    color: $text-color;
-                    font-weight: bold;
-                }
-    
-                &_dot {
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50px;
-                    background-color: $primary-color;
-                }
-            }
-        }
-    }
-    
+body{    
     .aboutuniverView {
         background: none;
         box-shadow: none;

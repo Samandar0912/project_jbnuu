@@ -115,3 +115,20 @@ class UsefulSites(models.Model):
         verbose_name="Foydali saytlar"
         verbose_name_plural="Foydali saytlar"
         ordering = ['-id']
+        
+        
+        
+
+class UniverHistoryCard(models.Model):
+    title = models.CharField(max_length=250, verbose_name='Sarlovhasi')
+    body = models.TextField(verbose_name='texti')
+    photo = models.ImageField(upload_to='media/photo/', verbose_name='rasm' )
+    yil = models.CharField(max_length=9, verbose_name='yilni kiriting')
+    
+    def __str__(self):
+        return str(self.title)
+    
+    class Meta:
+        verbose_name="Foydali saytlar"
+        verbose_name_plural="Foydali saytlar"
+        

@@ -57,3 +57,42 @@ def elonDetail(request, pk):
     }
     return render(request, 'news/elonDetail.html', context)
 
+
+def flial(request):
+    return render(request,'flial/flial.html')
+
+def univerHaqida(request):
+    return render(request,'flial/universitet_haqida.html')
+
+def univerHaqidaDetail(request):
+    return render(request,'flial/universitet-haqida/universitet-haqida_detail.html')
+
+
+
+def fakultet(request):
+    return render(request,'flial/fakultet.html')
+
+def markazlar(request):
+    return render(request,'flial/markazlar.html')
+
+def markaz_detail(request):
+    return render(request,'flial/markazlar/markaz_detail.html')
+
+def jobs(request):
+    return render(request,'flial/jobs.html')
+
+def rekvezit(request):
+    return render(request,'flial/Rekvizitlar.html')
+
+
+def raxbariyat(request):
+    return render(request,'flial/raxbariyat.html')
+
+
+def history(request):
+    return render(request,'flial/history.html')
+
+
+def struktura(request):
+    return render(request,'flial/struktura.html')
+

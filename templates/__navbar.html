@@ -92,20 +92,20 @@
                 <img src="{% static 'images/dropdowArrow.svg' %}" alt="">
             </div>
             <ul class="menu">
-                <li><a href="#" class="menuItem">Universitet haqida</a></li>
-                <li><a href="#" class="menuItem">Filial tarixi</a></li>
+                <li><a href="{% url "main:univerHaqida" %}" class="menuItem">Universitet haqida</a></li>
+                <li><a href="{% url 'main:history' %}" class="menuItem">Filial tarixi</a></li>
                 <li><a href="#" class="menuItem">Filial tuzilmasi</a></li>
                 <li><a href="#" class="menuItem">Filial kengashi</a></li>
-                <li><a href="#" class="menuItem">Rahbariyat</a></li>
-                <li><a href="#" class="menuItem">Markazlar</a></li>
+                <li><a href="{% url 'main:raxbariyat' %}" class="menuItem">Rahbariyat</a></li>
+                <li><a href="{% url 'main:markazlar' %}" class="menuItem">Markazlar</a></li>
                 <li><a href="#" class="menuItem">Bo'limlar</a></li>
                 <li><a href="#" class="menuItem">Karyera markazi</a></li>
                 <li><a href="#" class="menuItem">Sektorlar</a></li>
-                <li><a href="#" class="menuItem">Fakultetlar</a></li>
+                <li><a href="{% url 'main:fakultet' %}" class="menuItem">Fakultetlar</a></li>
                 <li><a href="#" class="menuItem">Kafedralar</a></li>
-                <li><a href="#" class="menuItem">Bo‘sh ish o‘rinlari</a></li>
+                <li><a href="{% url 'main:jobs' %}" class="menuItem">Bo‘sh ish o‘rinlari</a></li>
                 <li><a href="#" class="menuItem">Bino inshoatlar joylashuvi</a></li>
-                <li><a href="#" class="menuItem">Rekvizitlar</a></li>
+                <li><a href="{% url 'main:rekvezit' %}" class="menuItem">Rekvizitlar</a></li>
                 <li><a href="#" class="menuItem">Asosiy me'yoriy hujjatlar</a></li>
                 <li><a href="#" class="menuItem">Manfaatlar to'qnashuvi to'g'risida</a></li>
             </ul>            

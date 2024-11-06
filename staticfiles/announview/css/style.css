@@ -1,55 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
-.crambs {
-  width: 80%;
-  padding: 0%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background: none;
-  box-shadow: none;
-}
-.crambs-title, .crambs-body {
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  border-radius: 12px;
-  width: 100%;
-}
-.crambs-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.crambs-title__text {
-  font-size: 25px;
-  color: #5d809b;
-  font-weight: bold;
-}
-.crambs-body {
-  padding: 5px 0 5px;
-}
-.crambs-body__item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  gap: 1rem;
-  margin-left: 52px;
-}
-.crambs-body__item_link {
-  color: #5d809b;
-  font-weight: bold;
-}
-.crambs-body__item_dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  background-color: #627e94;
-}
-
-.announview .container {
+body .announview .container {
   width: 100%;
   display: grid;
   grid-template-columns: 1.4fr 0.6fr;
@@ -58,7 +8,7 @@
   grid-auto-flow: row;
   grid-template-areas: "view items";
 }
-.announview .view {
+body .announview .view {
   grid-area: view;
   border-radius: 8px;
   overflow: hidden;
@@ -66,51 +16,51 @@
   flex-direction: column;
   gap: 10px;
 }
-.announview .view img {
+body .announview .view img {
   display: block;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.announview .view .date {
+body .announview .view .date {
   color: #5d809b;
   font-size: 12px;
 }
-.announview .view .text {
+body .announview .view .text {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.announview .view .text .text-title {
+body .announview .view .text .text-title {
   font-size: 20px;
   text-align: center;
   color: #5d809b;
   font-weight: bold;
 }
-.announview .view .text .text-body {
+body .announview .view .text .text-body {
   color: #5d809b;
   line-height: 1.5rem;
 }
-.announview .view .text .images {
+body .announview .view .text .images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px 30px;
   grid-auto-flow: row;
 }
-.announview .view .text .images img {
+body .announview .view .text .images img {
   height: 300px;
   border: 1px solid #627e94;
   border-radius: 8px;
 }
-.announview .items {
+body .announview .items {
   grid-area: items;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
 }
-.announview-item {
+body .announview-item {
   background-size: contain;
   border-radius: 8px;
   overflow: hidden;
@@ -122,7 +72,7 @@
   flex-direction: column;
   gap: 1rem;
 }
-.announview-item img {
+body .announview-item img {
   display: block;
   width: 100%;
   height: 60%;
@@ -130,33 +80,33 @@
      object-fit: cover;
   border-radius: 12px;
 }
-.announview-item .body {
+body .announview-item .body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   gap: 2rem;
 }
-.announview-item .body .text {
+body .announview-item .body .text {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.announview-item .body .text .date {
+body .announview-item .body .text .date {
   color: #5d809b;
   font-weight: normal;
   font-size: 13px;
 }
-.announview-item .body .text .discreption {
+body .announview-item .body .text .discreption {
   color: #5d809b;
   font-size: 18px;
 }
-.announview-item .body .btn {
+body .announview-item .body .btn {
   text-align: end;
   right: 0%;
   bottom: 0%;
 }
-.announview-item .body .btn a {
+body .announview-item .body .btn a {
   padding: 0.5rem 2rem;
   background: none;
   border: 1px solid #627e94;
@@ -165,11 +115,11 @@
   cursor: pointer;
   font-size: 15px;
 }
-.announview-item .body .btn a:hover {
+body .announview-item .body .btn a:hover {
   background-color: rgba(98, 126, 148, 0.71);
   color: #ffffff;
 }
-.announview-item .body .btn a:active {
+body .announview-item .body .btn a:active {
   background: local;
   color: #5d809b;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,71 @@
+{% extends "__base.html" %}
+{% load static %}
+{% block main %}
+
+    <section id="crambs" class="crambs">
+        <div class="crambs-title">
+            <svg width="390" height="69" viewBox="0 0 390 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.99986 0.468018H389.411L356.411 18.468H-26L6.99986 0.468018Z" fill="#537188" />
+                <path d="M-85.0001 25.468H297.411L264.411 43.468H-118L-85.0001 25.468Z" fill="#537188" />
+                <path d="M-172 50.468H210.411L177.411 68.468H-205L-172 50.468Z" fill="#537188" />
+            </svg>
+            <p class="crambs-title__text">Bo`sh ish o`rinlari</p>
+            <svg width="386" height="69" viewBox="0 0 386 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M212 0.468018H594.411L561.411 18.468H179L212 0.468018Z" fill="#537188" />
+                <path d="M120 25.468H502.411L469.411 43.468H87L120 25.468Z" fill="#537188" />
+                <path d="M32.9999 50.468H415.411L382.411 68.468H0L32.9999 50.468Z" fill="#537188" />
+            </svg>
+        </div>
+        <div class="crambs-body">
+            <div class="crambs-body__item">
+                <a class="crambs-body__item_link" href="{% url 'main:index' %}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                        <path
+                            d="M7.54916 0.533177C8.38719 -0.173819 9.61281 -0.173819 10.4508 0.533177L17.2008 6.22772C17.7076 6.65523 18 7.28447 18 7.94747V17.7504C18 18.7169 17.2165 19.5004 16.25 19.5004H13.25C12.2835 19.5004 11.5 18.7169 11.5 17.7504V12.7504C11.5 12.3362 11.1642 12.0004 10.75 12.0004H7.25C6.83579 12.0004 6.5 12.3362 6.5 12.7504V17.7504C6.5 18.7169 5.7165 19.5004 4.75 19.5004H1.75C0.783502 19.5004 0 18.7169 0 17.7504V7.94747C0 7.28447 0.292405 6.65523 0.799155 6.22772L7.54916 0.533177Z"
+                            />
+                    </svg>
+                </a>
+                <div class="crambs-body__item_dot"></div>
+                <a class="crambs-body__item_link" href="{% url 'main:flial' %}">Filial</a>
+                <div class="crambs-body__item_dot"></div>
+                <a class="crambs-body__item_link" href="{% url 'main:jobs' %}">Bo`sh ish o`rinlari</a>
+            </div>
+        </div>
+    </section>
+    <section id="jobs" class="jobs">
+        <div class="container">
+         
+            {% comment %}  {% endcomment %}
+            {% comment %}  {% endcomment %}
+            {% comment %}  {% endcomment %}
+
+            {% include "flial/__item1_left.html" %}
+
+            {% comment %}  {% endcomment %}
+            {% comment %}  {% endcomment %}
+            {% comment %}  {% endcomment %}
+
+
+            <div class="item2">
+                <div class="jobs-item title">
+                   <div class="jobs-item__text">Tаrkibiy bo'linmаlаrning nomlаnishi vа lаvozimlаr nomi</div>
+                    <div class="jobs-item__text">Shtаt birlik-lаri soni</div>
+                    <div class="jobs-item__text">Oylik mehnаtgа hаq to‘lаsh jаmg‘аrmаsi</div>
+                </div>
+
+                <div class="jobs-item box">
+                    <div class="jobs-item__text">O'quv-uslubiy bo'lim</div>
+                </div>
+                <div class="jobs-item item">
+                <div class="jobs-item__text item-text">Elektron kutubxonalar kutubxonachis</div>
+                    <div class="jobs-item__text item-text">1</div>
+                    <div class="jobs-item__text item-text">1 580 250</div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+{% endblock main %}
+

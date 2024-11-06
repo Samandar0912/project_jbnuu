@@ -1,55 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
-.crambs {
-  width: 80%;
-  padding: 0%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background: none;
-  box-shadow: none;
-}
-.crambs-title, .crambs-body {
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  border-radius: 12px;
-  width: 100%;
-}
-.crambs-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.crambs-title__text {
-  font-size: 25px;
-  color: #5d809b;
-  font-weight: bold;
-}
-.crambs-body {
-  padding: 5px 0 5px;
-}
-.crambs-body__item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  gap: 1rem;
-  margin-left: 52px;
-}
-.crambs-body__item_link {
-  color: #5d809b;
-  font-weight: bold;
-}
-.crambs-body__item_dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  background-color: #627e94;
-}
-
-.branch .container {
+body .branch .container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -57,7 +7,7 @@
   flex-wrap: wrap;
   gap: 30px 30px;
 }
-.branch-item {
+body .branch-item {
   width: 250px;
   padding: 1rem 2rem;
   border-radius: 8px;
@@ -69,17 +19,17 @@
   transition: 0.3s all linear;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.branch-item p {
+body .branch-item p {
   color: #5d809b;
   font-weight: bold;
 }
-.branch-item:hover {
+body .branch-item:hover {
   background-color: #627e94;
 }
-.branch-item:hover svg path {
+body .branch-item:hover svg path {
   fill: white;
   stroke: white;
 }
-.branch-item:hover p {
+body .branch-item:hover p {
   color: white;
 }/*# sourceMappingURL=style.css.map */

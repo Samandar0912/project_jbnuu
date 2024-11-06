@@ -1,62 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
-.crambs {
-  width: 80%;
-  padding: 0%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background: none;
-  box-shadow: none;
-}
-.crambs-title, .crambs-body {
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  border-radius: 12px;
-  width: 100%;
-}
-.crambs-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.crambs-title__text {
-  font-size: 25px;
-  color: #5d809b;
-  font-weight: bold;
-}
-.crambs-body {
-  padding: 5px 0 5px;
-}
-.crambs-body__item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  gap: 1rem;
-  margin-left: 52px;
-}
-.crambs-body__item_link {
-  color: #5d809b;
-  font-weight: bold;
-}
-.crambs-body__item_dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  background-color: #627e94;
-}
-
-.announst .container {
+body .announst .container {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   gap: 30px 30px;
 }
-.announst-item {
+body .announst-item {
   background-size: contain;
   border-radius: 8px;
   overflow: hidden;
@@ -68,7 +18,7 @@
   flex-direction: column;
   gap: 1rem;
 }
-.announst-item img {
+body .announst-item img {
   display: block;
   width: 100%;
   height: 60%;
@@ -76,29 +26,27 @@
      object-fit: cover;
   border-radius: 12px;
 }
-.announst-item .body {
+body .announst-item .body {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
-.announst-item .body .text {
+body .announst-item .body .text {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
-.announst-item .body .text .date {
+body .announst-item .body .text .date {
   color: #5d809b;
   font-weight: normal;
   font-size: 13px;
 }
-.announst-item .body .text .discreption {
+body .announst-item .body .text .discreption {
   color: #5d809b;
-  font-size: 20px;
+  font-size: 16px;
 }
-.announst-item .body .btn {
+body .announst-item .body .btn {
   text-align: end;
 }
-.announst-item .body .btn a {
+body .announst-item .body .btn a {
   right: 0rem;
   bottom: 0rem;
   padding: 0.5rem 2rem;
@@ -109,11 +57,11 @@
   cursor: pointer;
   font-size: 15px;
 }
-.announst-item .body .btn a:hover {
+body .announst-item .body .btn a:hover {
   background-color: rgba(98, 126, 148, 0.71);
   color: #ffffff;
 }
-.announst-item .body .btn a:active {
+body .announst-item .body .btn a:active {
   background: local;
   color: #5d809b;
 }/*# sourceMappingURL=style.css.map */
