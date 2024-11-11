@@ -96,3 +96,5 @@ def history(request):
 def struktura(request):
     return render(request,'flial/struktura.html')
 
+def tuzulma(request):
+    return render(request, 'flial/struktura.html')

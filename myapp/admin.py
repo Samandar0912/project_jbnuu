@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category_facultet, post_site_news, post_site_elon, Statistika, MySites, FastLinks, UsefulSites
+from .models import * 
 from django.contrib.auth.models import Group
 from django.utils.text import Truncator
 
@@ -93,3 +93,13 @@ admin.site.register(Statistika, StatistikaAdmin)
 admin.site.register(FastLinks, FastLinksAdmin)
 admin.site.register(MySites, MySitesAdmin)
 admin.site.register(UsefulSites, UsefulSitesAdmin)
+
+
+admin.site.register(UniverHistoryCard)
+admin.site.register(FilialHistory)
+admin.site.register(KengashCategory)
+admin.site.register(KengashArticle)
+admin.site.register(Raxbaryat)
+admin.site.register(CategoryCenter)
+admin.site.register(CenterArticle)
+admin.site.register(Centerplus)
